@@ -33,7 +33,7 @@ public class AnalisadorLexico {
         "this", "static", "abstract", "class", "extends", "implements", "interface", "native", "new",
         "strictfp", "synchronized", "transient", "volatile", "break", "case", 
         "continue", "instanceof", "assert", "finally", "throw", "import", 
-        "package", "short", "this", "const", "goto", "float", "boolean"}; 
+        "package", "short", "this", "const", "goto", "float", "boolean","true","false","null"}; 
     private final ArrayList<String> palavrasReservadas = 
             new ArrayList<>(Arrays.asList(palavras));
     
