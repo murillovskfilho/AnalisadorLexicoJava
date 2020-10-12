@@ -1,6 +1,6 @@
 package compilador;
 
-import ui.Home;
+import tela.Home;
 
 public class Compilador {
 

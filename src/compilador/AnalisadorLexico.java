@@ -7,30 +7,33 @@ public class AnalisadorLexico {
     
     private static AnalisadorLexico instance;
     
-    private final String[] n = {"0","1","2","3","4","5","6","7","8","9"};
     //Array de numeros da gramática
+    private final String[] n = {"0","1","2","3","4","5","6","7","8","9"};
     private final ArrayList<String> num = new ArrayList<String>(Arrays.asList(n));
     
+    //Array de letras da gramática
     private final String[] l = {"a","b","c","d","e","f","g","h","i","j",
         "k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"};
-    //Array de letras da gramática
     private final ArrayList<String> letras = new ArrayList<>(Arrays.asList(l));
     
+    //Array de letras da gramática Maiuscula
     private final String[] m = {"A","B","C","D","E","F","G","H","I","J",
             "K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"};
-        //Array de letras da gramática
-        private final ArrayList<String> letrasm = new ArrayList<>(Arrays.asList(m));
+    private final ArrayList<String> letrasm = new ArrayList<>(Arrays.asList(m));
     
-    private final String[] op = {",",";","(",")","{","}","[","]","+",
-        "-","*","/","=","<",">","!","&","|", "'", "\""};
     //Array de sinal da gramática
+    private final String[] op = {",",";","(",")","{","}","[","]","+",
+        "-","*","/","=","==", "<",">","!", "!=", "&", "&&", "|", "||", "'", "\"", "	", "."};
     private final ArrayList<String> sinais = new ArrayList<>(Arrays.asList(op));
     
+    //Array de palavras reservadas da gramática
     private final String[] palavras = {"int","void","float","char","return",
         "if","while", "private", "boolean", "protected", "public", "final", "case", "else", "do",
         "for", "switch", "try", "catch", "throws", "byte", "char", "long", "double", "super", 
-        "this", "static"}; 
-    //Array de palavras reservadas da gramática
+        "this", "static", "abstract", "class", "extends", "implements", "interface", "native", "new",
+        "strictfp", "synchronized", "transient", "volatile", "break", "case", 
+        "continue", "instanceof", "assert", "finally", "throw", "import", 
+        "package", "short", "this", "const", "goto", "float", "boolean"}; 
     private final ArrayList<String> palavrasReservadas = 
             new ArrayList<>(Arrays.asList(palavras));
     
