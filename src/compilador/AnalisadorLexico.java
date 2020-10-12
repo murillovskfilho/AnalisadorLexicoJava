@@ -23,7 +23,7 @@ public class AnalisadorLexico {
     
     //Array de sinal da gramática
     private final String[] op = {",",";","(",")","{","}","[","]","+",
-        "-","*","/","=","==", "<",">","!", "!=", "&", "&&", "|", "||", "'", "\"", "	", "."};
+        "-","*","/","=","==", "<",">","!", "!=", "&", "&&", "|", "||", "'", "\"", "	", ".",":","?","\\"};
     private final ArrayList<String> sinais = new ArrayList<>(Arrays.asList(op));
     
     //Array de palavras reservadas da gramática
