@@ -1,0 +1,170 @@
+package
+import
+new
+class
+interface
+enum
+abstract
+final
+implements
+extends
+instanceof
+public
+private
+protected
+super
+this
+throw
+throws
+try
+catch
+finally
+if
+else
+for
+do
+while
+switch
+case
+default
+break
+continue
+return
+boolean
+byte
+short
+int
+long
+double
+float
+char
+void
+strictfp
+transient
+volatile
+synchronized
+native
+assert
+static
+goto
+const
+true
+false
+null
+------------
+,
+;
+(
+)
+{
+}
+[
+]
++
+-
+*
+/
+=
+==
+<
+>
+!
+!=
+&&
+||
+'
+.
+--------------
+1
+12
+123
+1234
+12345
+
+public static void metodo (int[] vetor) {
+		
+		int teste[] = {1,2,3,4};
+		for (int i = 0; i < teste.length; ++i){
+			System.out.print(teste[i] + " ");
+		}
+		
+	}
+
+-----------------------------
+
+String[][] matriz = { { "Murilo", "Filho" }, { "Arthur", "Landim" }, { "Luid", "Sousa"} };
+
+		
+		for (int i = 0; i < matriz.length; i++) {
+			String nome = matriz[i][0];
+			String sobrenome = matriz[i][1];
+			System.out.println(nome + " " + sobrenome);
+		}
+
+----------------------------------
+
+int valor1 = 1;
+		int valor2 = 2;
+		
+		System.out.println("Operador Ternario:");
+		System.out.println((valor1 > valor2 ? "1 eh maior\n" : "2 eh maior\n"));
+		
+		System.out.println("IF ELSE:");
+		if (valor1 > valor2) {
+			System.out.println("1 eh maior\n");
+		}
+		else {
+			System.out.println("2 eh maior\n");
+		}
+		
+		System.out.println();
+		int valor = 0;
+		
+		switch (valor) {
+		case 1:
+			System.out.println("Valor = 1\n");
+			break;
+			
+		case 2:
+			System.out.println("Valor = 2\n");
+			break;
+			
+		default:
+			System.out.println("Nenhum dos 2 valores\n");
+			break;
+		}
+
+
+--------------------------
+
+	int n = 15;
+		
+		System.out.println("While");
+		while (n<20) {
+			System.out.println("Ainda nao " + n);
+			n++;
+		}
+
+----------------------------
+
+int x = 15;
+		System.out.println("DO WHILE");
+		do {
+			System.out.println("Nao");
+			x++;
+		} while (x < 20);
+
+----------------------------
+
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int teste[] = {1,2,3,4};
+		
+		System.out.println(teste[1]);
+	}
+
+---------------------------
+static int media(int notaA, int notaB) {
+        int media = (notaA + notaB) / 2;
+        return media;
+    }
